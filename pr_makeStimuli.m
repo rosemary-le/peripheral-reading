@@ -7,9 +7,9 @@
 clc; clear all; close all; 
 
 % get the path to the periphery repository
-wpPath = wp_rootPath; 
+prPath = pr_rootPath; 
 % path to the text file containing the letters
-textFileName = fullfile(wpPath,'stimuli','letters','alphabet.txt');
+textFileName = fullfile(prPath,'stimuli','letters','alphabet.txt');
 % read in the text file
 fid = fopen(textFileName);
 letters = textscan(fid, '%s');
